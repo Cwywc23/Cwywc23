@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<!-- saved from url=(0020)https://ss64.com/ps/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=768, initial-scale=1">
+<link rel="STYLESHEET" href="./PowerShell commands - PowerShell - SS64.com_files/main.css" type="text/css">
+<title>PowerShell commands - PowerShell - SS64.com</title>
+<link rel="canonical" href="https://ss64.com/ps/">
+<meta name="Description" content="An A-Z Index of Windows PowerShell commands. Get-Acl, Set-Acl, Get-Alias, Get-ChildItem, Get-Command, Add-Content,  Get-Content, Set-Content, Test-Connection">
+<style>
+.reverse {color: #ddd; background-color:black;}
+</style>
+<script async="" type="text/javascript" src="./PowerShell commands - PowerShell - SS64.com_files/cmp2.js.download"></script><script async="" type="text/javascript" src="./PowerShell commands - PowerShell - SS64.com_files/choice.js.download"></script><script async="" src="./PowerShell commands - PowerShell - SS64.com_files/q.js.download"></script>
+<script async="" src="./PowerShell commands - PowerShell - SS64.com_files/menu.js.download"></script>
+<style type="text/css"> .qc-cmp-button.qc-cmp-secondary-button:hover {    background-color: #368bd6 !important;    border-color: transparent !important;  }  .qc-cmp-button.qc-cmp-secondary-button:hover {    color: #ffffff !important;  }  .qc-cmp-button.qc-cmp-secondary-button {    color: #368bd6 !important;  }  .qc-cmp-button.qc-cmp-secondary-button {    background-color: #eee !important;    border-color: transparent !important;  } </style></head>
+<body>
+<div id="tnav"><ul>
+<li class="tbtn"><a href="https://ss64.com/">SS64</a></li>
+<li class="tflat">PowerShell <svg viewBox="0 0 13 20.1" width="13" height="13" style="transform: rotate(0deg);"><path d="M0 2.9l7.2 7.2-7.1 7.1L3 20.1l7.1-7.1 2.9-2.9L2.9 0 0 2.9"></path></svg></li>
+<li class="tbtn"><a href="https://ss64.com/ps/syntax.html">How-to <svg viewBox="0 0 13 20.1" width="13" height="13" style="transform: rotate(0deg);"><path d="M0 2.9l7.2 7.2-7.1 7.1L3 20.1l7.1-7.1 2.9-2.9L2.9 0 0 2.9"></path></svg></a></li>
+<li><div id="search"><form action="https://www.google.com/search" method="get">
+<input type="text" name="q" id="qu" size="27" maxlength="255" aria-label="Search text">
+<input class="submit mousetrap" value="Search" id="btn" type="submit">
+<input type="hidden" name="sitesearch" value="ss64.com"></form></div></li>
+</ul></div>
+<h1>An A-Z Index of <span class="blu">Windows <b>PowerShell</b></span> commands</h1>
+<pre class="space">      <a href="https://ss64.com/ps/foreach-object.html">  %  </a>                   Alias for <a href="https://ss64.com/ps/foreach-object.html">ForEach-Object</a>
+      <a href="https://ss64.com/ps/where-object.html">  ?  </a>                   Alias for <a href="https://ss64.com/ps/where-object.html">Where-Object</a>
+A
+    <a href="https://ss64.com/ps/get-acl.html">Get-Acl</a>                   Get permission settings for a file or registry key.
+    <a href="https://ss64.com/ps/set-acl.html">Set-Acl</a>                   Set permissions.
+        <a href="https://ss64.com/ps/ad.html">Active Directory</a>      Account, Computer, Group and User cmdlets.
+    <a href="https://ss64.com/ps/get-alias.html">Get-Alias</a>           gal   Return alias names for Cmdlets.
+ <a href="https://ss64.com/ps/export-alias.html">Export-Alias</a>          epal   Export currently defined aliases to a file.
+ <a href="https://ss64.com/ps/import-alias.html">Import-Alias</a>          ipal   Import an alias list from a file.
+    <a href="https://ss64.com/ps/new-alias.html">New-Alias</a>           nal   Create a new alias.
+    <a href="https://ss64.com/ps/set-alias.html">Set-Alias</a>           sal   Create or change an alias.
+    Get-AppvClientPackage     Return App-V Client Packages.
+    <a href="https://ss64.com/ps/get-appxpackage.html">Get-AppxPackage</a>           List the app packages installed in a user profile.
+ <a href="https://ss64.com/ps/remove-appxpackage.html">Remove-AppxPackage</a>           Remove an app package from a user account.
+    Add-AppxProvisionedPackage
+    <a href="https://ss64.com/ps/get-appxprovisionedpackage.html">Get-AppxProvisionedPackage</a> Get information about appx packages in an image via DISM.
+ <a href="https://ss64.com/ps/compress-archive.html">Compress-Archive</a>             Create a new archive/zipped file. [PS 5+]
+   <a href="https://ss64.com/ps/expand-archive.html">Expand-Archive</a>             Extract files from an archive (zipped) file [PS 5+]
+   <a href="https://ss64.com/ps/get-authenticodesignature.html">Get-AuthenticodeSignature</a>  Get the signature object associated with a file.
+   <a href="https://ss64.com/ps/set-authenticodesignature.html">Set-AuthenticodeSignature</a>  Place a signature in a .ps1 script or other file.
+<a id="b"></a>B
+       <a href="https://ss64.com/ps/backup-gpo.html">Backup-GPO</a>             Backup group policy objects. (GPOs)
+       <a href="https://ss64.com/ps/syntax-function-input.html">Begin</a>                  Function BEGIN block.
+       <a href="https://ss64.com/ps/bits.html">BITS</a>                   Background Intelligent Transfer Service cmdlets.
+   <a href="https://ss64.com/ps/enable-bitlocker.html">Enable-BitLocker</a>           Enable encryption for a BitLocker volume.
+   <a href="https://ss64.com/ps/enable-bitlockerautounlock.html">Enable-BitLockerAutoUnlock</a> Enable automatic unlocking for a BitLocker volume.
+  <a href="https://ss64.com/ps/disable-bitlocker.html">Disable-BitLocker</a>           Disable encryption for a BitLocker volume.
+   <a href="https://ss64.com/ps/resume-bitlocker.html">Resume-Bitlocker</a>           Resume Bitlocker encryption for the specified volume.
+  <a href="https://ss64.com/ps/suspend-bitlocker.html">Suspend-BitLocker</a>           Suspend Bitlocker encryption for the specified volume.
+      <a href="https://ss64.com/ps/add-bitlockerkeyprotector.html">Add-BitLockerKeyProtector</a>  Add a key protector for a BitLocker volume.
+   Remove-BitLockerKeyProtector  Remove a key protector from a BitLocker volume.
+      <a href="https://ss64.com/ps/get-bitlockervolume.html">Get-BitLockerVolume</a>     Get information about volumes BitLocker can protect.
+       <a href="https://ss64.com/ps/break.html">Break</a>                  Exit a program loop.
+<a id="c"></a>C
+     <a href="https://ss64.com/ps/try.html">Catch</a>                    Handle a terminating error within a scriptblock.
+  Export-Certificate          Export a certificate from a certificate store into a file.
+     <a href="https://ss64.com/ps/get-certificate.html">Get-Certificate</a>          Submit/retrieve a certificate request to an enrollment server and install.
+  Import-Certificate          Import one or more certificates into a certificate store.
+   <a href="https://ss64.com/ps/set-location.html">Set-Location</a>  cd/chdir/sl  Set the current working location.
+   <a href="https://ss64.com/ps/get-childitem.html">Get-ChildItem</a>   dir/ls/gci Get child items (contents of a folder or registry key).
+     <a href="https://ss64.com/ps/clear-host.html">Clear-Host</a>    clear/cls  Clear the screen.
+     <a href="https://ss64.com/ps/clear-item.html">Clear-Item</a>         cli   Remove content from a variable or an alias.
+       <a href="https://ss64.com/ps/get-cimassociatedinstance.html">Get-CimAssociatedInstance</a>  Retrieve CIM instance by an association.
+       <a href="https://ss64.com/ps/get-cimclass.html">Get-CimClass</a>     gcls  Get a list of CIM classes in a specific namespace.
+  <a href="https://ss64.com/ps/register-cimindicationevent.html">Register-CimIndicationEvent</a> Subscribe to indications using a filter or query expression.
+       <a href="https://ss64.com/ps/new-ciminstance.html">New-CimInstance</a>  ncim  Create a new instance of a class.
+       <a href="https://ss64.com/ps/get-ciminstance.html">Get-CimInstance</a>  gcim  Get a managed resource (storage, network, software etc).
+    <a href="https://ss64.com/ps/remove-ciminstance.html">Remove-CimInstance</a>  rcim  Remove a CIM instance from a computer.
+       <a href="https://ss64.com/ps/set-ciminstance.html">Set-CimInstance</a>  scim  Modify a CIM instance on a CIM server.
+    <a href="https://ss64.com/ps/invoke-cimmethod.html">Invoke-CimMethod</a>    icim  Invoke a method of a CIM class or CIM instance.
+       <a href="https://ss64.com/ps/get-cimsession.html">Get-CimSession</a>   gcms  Get current CIM session objects.
+       <a href="https://ss64.com/ps/new-cimsession.html">New-CimSession</a>   ncms  Create a CIM session.
+       <a href="https://ss64.com/ps/new-cimsessionoption.html">New-CimSessionOption</a>   Advanced options for New-CimSession.
+    <a href="https://ss64.com/ps/remove-cimsession.html">Remove-CimSession</a>   rcms  Remove one or more CIM session objects.
+       <a href="https://ss64.com/ps/get-clipboard.html">Get-Clipboard</a>          Get the current Windows clipboard entry.
+       <a href="https://ss64.com/ps/set-clipboard.html">Set-Clipboard</a>          Set the current Windows clipboard entry.
+       <a href="https://ss64.com/ps/get-command.html">Get-Command</a>      gcm   Retrieve basic information about a command.
+    <a href="https://ss64.com/ps/invoke-command.html">Invoke-Command</a>      icm   Run command.
+      <a href="https://ss64.com/ps/show-command.html">Show-Command</a>     shcm   Create PowerShell commands in a graphical command window.
+   <a href="https://ss64.com/ps/measure-command.html">Measure-Command</a>            Measure the running time of a script block or cmdlet.
+     <a href="https://ss64.com/ps/trace-command.html">Trace-Command</a>            Trace an expression or command.
+        <a href="https://ss64.com/ps/add-computer.html">Add-Computer</a>          Add a computer to the domain.
+ <a href="https://ss64.com/ps/checkpoint-computer.html">Checkpoint-Computer</a>          Create a system restore point.
+     <a href="https://ss64.com/ps/remove-computer.html">Remove-Computer</a>          Remove the local computer from a workgroup or domain.
+     <a href="https://ss64.com/ps/rename-computer.html">Rename-Computer</a>          Rename a computer.
+    <a href="https://ss64.com/ps/restart-computer.html">Restart-Computer</a>          Restart the operating system on a computer.
+    <a href="https://ss64.com/ps/restore-computer.html">Restore-Computer</a>          Restore the computer to a previous state.
+       <a href="https://ss64.com/ps/stop-computer.html">Stop-Computer</a>          Stop (shut down) a computer.
+        <a href="https://ss64.com/ps/get-computerinfo.html">Get-ComputerInfo</a>      Get system and operating system properties.
+<a href="https://ss64.com/ps/reset-computermachinepassword.html">Reset-ComputerMachinePassword</a> Reset the machine account password for the computer.
+  Enable-ComputerRestore      Creat a Restore Point.
+ <a href="https://ss64.com/ps/test-computersecurechannel.html">Test-ComputerSecureChannel</a>   Test and repair the secure channel to the domain.
+     <a href="https://ss64.com/ps/add-content.html">Add-Content</a>         ac   Add to the content of the item.
+     <a href="https://ss64.com/ps/get-content.html">Get-Content</a> cat/type/gc  Get content from item (specific location).
+     <a href="https://ss64.com/ps/set-content.html">Set-Content</a>         sc   Set content in the item (specific location).
+   <a href="https://ss64.com/ps/clear-content.html">Clear-Content</a>        clc   Remove content from a file/item.
+         <a href="https://ss64.com/ps/continue.html">Continue</a>             Skip just this iteration of a loop.
+   <a href="https://ss64.com/ps/enable-computerrestore.html">Enable-ComputerRestore</a>     Enable System Restore on a drive.
+   <a href="https://ss64.com/ps/disable-computerrestore.html">Disable-ComputerRestore</a>    Disable System Restore on a drive.
+  <a href="https://ss64.com/ps/get-computerrestorepoint.html">Get-ComputerRestorePoint</a>    Get the restore points on the local computer.
+ <a href="https://ss64.com/ps/test-connection.html">Test-Connection</a>              Ping one or more computers.
+   <a href="https://ss64.com/ps/convertfrom-csv.html">ConvertFrom-CSV</a>            Convert object properties (in CSV format) into CSV objects.
+   <a href="https://ss64.com/ps/convertto-csv.html">ConvertTo-CSV</a>              Convert .NET Framework objects into CSV variable-length strings.
+   <a href="https://ss64.com/ps/convertfrom-json.html">ConvertFrom-Json</a>           Convert a JSON-formatted string to a custom object.
+   <a href="https://ss64.com/ps/convertto-json.html">ConvertTo-Json</a>             Convert an object to a JSON-formatted string.
+   <a href="https://ss64.com/ps/convertto-html.html">ConvertTo-Html</a>             Convert the input into an HTML table.
+   <a href="https://ss64.com/ps/convertto-xml.html">ConvertTo-Xml</a>              Convert the input into XML.
+   ConvertFrom-String   cfs   Extract and parse structured properties from a string.
+   ConvertFrom-StringData     Convert a string containing key and value pairs into a hash table.
+   <a href="https://ss64.com/ps/convertfrom-securestring.html">ConvertFrom-SecureString</a>   Convert a secure string into an encrypted standard string.
+   <a href="https://ss64.com/ps/convertto-securestring.html">ConvertTo-SecureString</a>     Convert an encrypted standard string into a secure string.
+   <a href="https://ss64.com/ps/copy-item.html">Copy-Item</a>     copy/cp/ci   Copy an item from a namespace location.
+   <a href="https://ss64.com/ps/export-counter.html">Export-Counter</a>             Export Performance Counter data to log files.
+      <a href="https://ss64.com/ps/get-counter.html">Get-Counter</a>             Get performance counter data.
+   <a href="https://ss64.com/ps/import-counter.html">Import-Counter</a>             Import performance counter log files.
+   <a href="https://ss64.com/ps/get-credential.html">Get-Credential</a>             Get a security credential (username/password).
+   <a href="https://ss64.com/ps/get-culture.html">Get-Culture</a>                Get region information (language and keyboard layout).
+   Set-Culture                Set the user culture for the current user account.
+<a id="d"></a>D
+   <a href="https://ss64.com/ps/get-childitem.html">Get-ChildItem</a>   Dir/ls/gci Get child items (contents of a folder or registry key).
+   <a href="https://ss64.com/ps/get-date.html">Get-Date</a>                   Get current date and time.
+   <a href="https://ss64.com/ps/set-date.html">Set-Date</a>                   Set system time on the host system.
+   <a href="https://ss64.com/ps/clear-disk.html">Clear-Disk</a>                 Remove all partition information and un-initialize a disk, erasing all data.
+   Get-Disk                   Get one or more disks visible to the OS.
+   Set-Disk                   Set attributes and update a physical disk.
+  Initialize-Disk             Initialize a RAW disk for first use, this enables formatting.
+     Mount-DiskImage          Mount a previously created disk image (virtual HD or ISO)
+   <a href="https://ss64.com/ps/remove-item.html">Remove-Item</a>  Del/erase/rd/rm/rmdir   Delete an item.
+  <a href="https://ss64.com/ps/compare-object.html">Compare-Object</a> diff/compare   Compare the properties of objects.
+     <a href="https://ss64.com/ps/get-dnsclientcache.html">Get-DnsClientCache</a>       Retrieve the content of the local DNS client cache.
+   <a href="https://ss64.com/ps/clear-dnsclientcache.html">Clear-DnsClientCache</a>       Clear the content of the DNS client cache.
+   Get-DnsClientServerAddress  Get a DNS server IP address from the interface TCP/IP properties.
+   Set-DnsClientServerAddress  Set a DNS server IP address on the interface TCP/IP properties. 
+ Resolve-DnsName              Perform a DNS name query resolution for a specified name.  
+     <a href="https://ss64.com/ps/do.html">Do</a>                       Loop while a condition is True.
+     <a href="https://ss64.com/ps/get-dscconfiguration.html">Get-DscConfiguration</a>     Get the current config. of a node.
+     <a href="https://ss64.com/ps/get-dsclocalconfigurationmanager.html">Get-DscLocalConfigurationManager</a>   Get Local Config Manager settings.
+     <a href="https://ss64.com/ps/get-dscresource.html">Get-DscResource</a>          Get Desired State Config. resources from a computer.
+     <a href="https://ss64.com/ps/new-dscchecksum.html">New-DSCCheckSum</a>          Create checksum files for DSC docs/resources.
+   <a href="https://ss64.com/ps/start-dscconfiguration.html">Start-DscConfiguration</a>     Apply Desired State config to nodes.
+<a id="e"></a>E
+   <a href="https://ss64.com/ps/write-output.html">Write-Output</a>         echo  Write an object to the pipeline.
+         <a href="https://ss64.com/ps/syntax-function-input.html">End</a>                  Function END block.
+     <a href="https://ss64.com/ps/get-event.html">Get-Event</a>                Get events in the PowerShell event queue.
+     <a href="https://ss64.com/ps/new-event.html">New-Event</a>                Create a new event.
+  <a href="https://ss64.com/ps/remove-event.html">Remove-Event</a>                Delete events from the event queue.
+ <a href="https://ss64.com/ps/unregister-event.html">Unregister-Event</a>             Cancel an event subscription.
+    <a href="https://ss64.com/ps/wait-event.html">Wait-Event</a>                Wait until a particular event is raised.
+   <a href="https://ss64.com/ps/clear-eventlog.html">Clear-EventLog</a>             Delete all entries from an event log.
+     <a href="https://ss64.com/ps/get-eventlog.html">Get-Eventlog</a>             Get event log data (2003).
+   <a href="https://ss64.com/ps/limit-eventlog.html">Limit-EventLog</a>             Limit the size of the event log.
+     <a href="https://ss64.com/ps/new-eventlog.html">New-Eventlog</a>             Create a new event log and a new event source.
+  <a href="https://ss64.com/ps/remove-eventlog.html">Remove-EventLog</a>             Delete an event log.
+    <a href="https://ss64.com/ps/show-eventlog.html">Show-EventLog</a>             Display an event log.
+   <a href="https://ss64.com/ps/write-eventlog.html">Write-EventLog</a>             Write an event to an event log.
+     <a href="https://ss64.com/ps/get-winevent.html">Get-WinEvent</a>             Get event log data (Vista+).
+   <a href="https://ss64.com/ps/get-eventsubscriber.html">Get-EventSubscriber</a>        Get event subscribers.
+<a href="https://ss64.com/ps/register-engineevent.html">Register-EngineEvent</a>          Subscribe to PowerShell events.
+<a href="https://ss64.com/ps/register-objectevent.html">Register-ObjectEvent</a>          Subscribe to .NET events.
+   <a href="https://ss64.com/ps/register-wmievent.html">Register-WmiEvent</a>          Subscribe to a WMI event.
+   <a href="https://ss64.com/ps/get-executionpolicy.html">Get-ExecutionPolicy</a>        Get the execution policy for the shell.
+   <a href="https://ss64.com/ps/set-executionpolicy.html">Set-ExecutionPolicy</a>        Change the execution policy (user preference).
+   <a href="https://ss64.com/ps/export-alias.html">Export-Alias</a>         epal  Export currently defined aliases to a file.
+   <a href="https://ss64.com/ps/export-clixml.html">Export-Clixml</a>              Produce a clixml representation of PowerShell objects.
+   <a href="https://ss64.com/ps/export-console.html">Export-Console</a>             Export console configuration to a file.
+   <a href="https://ss64.com/ps/export-csv.html">Export-Csv</a>          epcsv  Export to Comma Separated Values (spreadsheet).
+   <a href="https://ss64.com/ps/exit-pssession.html">Exit-PSSession</a>       Exsn  Exit a PowerShell session.
+   <a href="https://ss64.com/ps/exit.html">Exit</a>                 Exit  Exit a script or exit PowerShell.
+<a id="f"></a>F
+   <a href="https://ss64.com/ps/syntax-f-operator.html">-F operator</a>                Format operator.
+   <a href="https://ss64.com/ps/unblock-file.html">Unblock-File</a>               Unblock files downloaded from the Internet.
+       <a href="https://ss64.com/ps/get-filehash.html">Get-FileHash</a>           Compute the hash value for a file.
+   <abbr title="Cmdlet"><a href="https://ss64.com/ps/foreach-object.html">ForEach-Object</a></abbr>    <abbr title="Alias">foreach</abbr>  Loop through each item in the pipeline ( % ).
+   <abbr title="Statement"><a href="https://ss64.com/ps/foreach.html">ForEach</a></abbr>                    Loop through each item in a collection.
+   <a href="https://ss64.com/ps/foreach-method.html">ForEach</a> method             Loop through each item in a collection.
+   <a href="https://ss64.com/ps/for.html">For</a>                        Loop through items that match a condition.
+   <a href="https://ss64.com/ps/format-custom.html">Format-Custom</a>         fc   Format output using a customized view.
+   <a href="https://ss64.com/ps/format-hex.html">Format-Hex</a>            fhx  Display a file or other input as hexadecimal.
+   <a href="https://ss64.com/ps/format-list.html">Format-List</a>           fl   Format output as a list of properties, each on a new line.
+   <a href="https://ss64.com/ps/format-table.html">Format-Table</a>          ft   Format output as a table.
+   <a href="https://ss64.com/ps/format-wide.html">Format-Wide</a>           fw   Format output as a table listing one property only.
+  <a href="https://ss64.com/ps/export-formatdata.html">Export-FormatData</a>           Save formatting data from the current session.
+     <a href="https://ss64.com/ps/get-formatdata.html">Get-FormatData</a>           Get the formatting data in the current session.
+<a id="g"></a>G
+   <a href="https://ss64.com/ps/get-item.html">Get-Item</a>              gi   Get a file/registry object (or any other namespace object).
+   <a href="https://ss64.com/ps/get-childitem.html">Get-ChildItem</a>   dir/ls/gci Get child items (contents of a folder or registry key).
+    <a href="https://ss64.com/ps/backup-gpo.html">Backup-GPO</a>                Backup group policy objects (GPOs).
+   <a href="https://ss64.com/ps/restore-gpo.html">Restore-GPO</a>                Restore one or all GPOs from a GPO backup.
+    <a href="https://ss64.com/ps/import-gpo.html">Import-GPO</a>                Import Group Policy settings into a specified GPO from a GPO backup.
+    <a href="https://ss64.com/ps/group-object.html">Group-Object</a>       group  Group objects that contain the same value.
+      <a href="https://ss64.com/ps/new-guid.html">New-Guid</a>                Create a GUID.
+<a id="h"></a>H
+   <a href="https://ss64.com/ps/get-help.html">Get-Help</a>            help   Open the help file.
+<a href="https://ss64.com/ps/update-help.html">Update-Help</a>                   Download and install the newest help files on your computer.
+     <a href="https://ss64.com/ps/add-history.html">Add-History</a>              Add entries to the session history.
+   <a href="https://ss64.com/ps/clear-history.html">Clear-History</a>       clhy   Delete entries from the session history.
+     <a href="https://ss64.com/ps/get-history.html">Get-History</a>  history/h/ghy Get a listing of the session history.
+  <a href="https://ss64.com/ps/invoke-history.html">Invoke-History</a>     r/ihy    Invoke a previously executed Cmdlet.
+     <a href="https://ss64.com/ps/get-host.html">Get-Host</a>                 Get host information (PowerShell Version and Region).
+   <a href="https://ss64.com/ps/clear-host.html">Clear-Host</a>      clear/cls  Clear the screen.
+     <a href="https://ss64.com/ps/out-host.html">Out-Host</a>            oh   Send output to the host.
+    <a href="https://ss64.com/ps/read-host.html">Read-Host</a>                 Read a line of user input from the host console.
+   <a href="https://ss64.com/ps/write-host.html">Write-Host</a>                 Write customized output to the host/screen.
+     <a href="https://ss64.com/ps/get-hotfix.html">Get-HotFix</a>               Get Installed hotfixes.
+<a id="i"></a>I
+   <a href="https://ss64.com/ps/if.html">if</a>                         Conditionally perform a command.
+   <a href="https://ss64.com/ps/invoke-cimmethod.html">Invoke-CimMethod</a>    icim   Invoke a method of a CIM class or CIM instance.
+   <a href="https://ss64.com/ps/import-clixml.html">Import-Clixml</a>              Import a clixml file and rebuild the PS object.
+   <a href="https://ss64.com/ps/import-csv.html">Import-Csv</a>         ipcsv   Take values from a CSV list and send objects down the pipeline.
+   Import-PfxCertificate      Import certificates and keys from a Personal Information Exchange(PFX) file.
+    Write-Information         Specify how PowerShell should handle information stream data.
+      Get-InitiatorPort       Get one or more host bus adapter (HBA) initiator ports.
+  Install-Module              Download and install one or more modules from an online gallery.
+  Install-Package             Install one or more software packages.
+   <a href="https://ss64.com/ps/invoke-command.html">Invoke-Command</a>             Run commands on local and remote computers.
+   <a href="https://ss64.com/ps/invoke-expression.html">Invoke-Expression</a>    iex   Run a PowerShell expression.
+   <a href="https://ss64.com/ps/invoke-webrequest.html">Invoke-WebRequest</a>          Get content from a web page.
+   <a href="https://ss64.com/ps/invoke-restmethod.html">Invoke-RestMethod</a>          Send an HTTP or HTTPS request to a RESTful web service.
+      <a href="https://ss64.com/ps/get-netipaddress.html">Get-NetIPAddress</a>        Get IPAddress configuration
+      <a href="https://ss64.com/ps/get-item.html">Get-Item</a>           gi   Get a file object or get a registry (or other namespace) object.
+   <a href="https://ss64.com/ps/invoke-item.html">Invoke-Item</a>           ii   Invoke an executable or open a file (START).
+      <a href="https://ss64.com/ps/new-item.html">New-Item</a>   md/mkdir/ni  Create a new item in a namespace.
+   <a href="https://ss64.com/ps/remove-item.html">Remove-Item</a>  rm/del/erase/rd/ri/rmdir   Remove an item.
+      <a href="https://ss64.com/ps/set-item.html">Set-Item</a>           si   Change the value of an item.
+    <a href="https://ss64.com/ps/clear-itemproperty.html">Clear-ItemProperty</a>  clp   Remove the property value from a property.
+     <a href="https://ss64.com/ps/copy-itemproperty.html">Copy-ItemProperty</a>  cpp   Copy a property along with it's value.
+      <a href="https://ss64.com/ps/get-itemproperty.html">Get-ItemProperty</a>   gp   Retrieve the properties of an object.
+     <a href="https://ss64.com/ps/move-itemproperty.html">Move-ItemProperty</a>   mp   Move a property from one location to another.
+      <a href="https://ss64.com/ps/new-itemproperty.html">New-ItemProperty</a>        Set a new property.
+   <a href="https://ss64.com/ps/remove-itemproperty.html">Remove-ItemProperty</a>   rp   Remove a property and its value.
+   <a href="https://ss64.com/ps/rename-itemproperty.html">Rename-ItemProperty</a>  rnp   Renames a property at its location.
+      <a href="https://ss64.com/ps/set-itemproperty.html">Set-ItemProperty</a>   sp   Set a property at the specified location to a specified value.
+  Get-ItemPropertyValue gpv   Get the value for one or more properties of a specified item.
+<a id="j"></a>J
+       <a href="https://ss64.com/ps/get-job.html">Get-Job</a>          gjb   Get PowerShell background jobs that are running.
+   <a href="https://ss64.com/ps/receive-job.html">Receive-Job</a>         rcjb   Get PowerShell background job results.
+    <a href="https://ss64.com/ps/remove-job.html">Remove-Job</a>          rjb   Delete a PowerShell background job.
+    Resume-Job         rujb   Restart a suspended job.
+     <a href="https://ss64.com/ps/start-job.html">Start-Job</a>         sajb   Start a PowerShell background job.
+      <a href="https://ss64.com/ps/stop-job.html">Stop-Job</a>         spjb   Stop a PowerShell background job.
+      <a href="https://ss64.com/ps/wait-job.html">Wait-Job</a>          wjb   Wait for a background job.
+   <a href="https://ss64.com/ps/scheduler.html">Job Trigger cmdlets</a>        Get/Set Scheduled job triggers.
+<a id="k"></a>K
+   <a href="https://ss64.com/ps/stop-process.html">Stop-Process</a>    kill/spps  Stop a running process.
+    Add-KdsRootKey            Generate a new root key for the MS.Group KdsSvc within AD.
+<a id="l"></a>L
+<a href="https://ss64.com/ps/update-list.html">  Update-List</a>                   Add and remove items from a collection.
+     <a href="https://ss64.com/ps/new-localgroup.html">New-LocalGroup</a>             Add a new local security group.
+     <a href="https://ss64.com/ps/get-localgroup.html">Get-LocalGroup</a>             Get the local security groups.
+  Remove-LocalGroup             Remove a local security group.
+  Rename-LocalGroup             Rename a local security group.
+     <a href="https://ss64.com/ps/set-localgroup.html">Set-LocalGroup</a>             Change a local security group.
+     Add-LocalGroupMember       Add members to a local group.
+     Get-LocalGroupMember       Get members from a local group.
+     <a href="https://ss64.com/ps/new-localuser.html">New-LocalUser</a>              Create a local user account.
+     <a href="https://ss64.com/ps/set-localuser.html">Set-LocalUser</a>              Modify a local user account.
+     <a href="https://ss64.com/ps/get-location.html">Get-Location</a>    pwd / gl   Get and display the current location.
+     <a href="https://ss64.com/ps/pop-location.html">Pop-Location</a>        popd   Set the current working location from the stack.
+    <a href="https://ss64.com/ps/push-location.html">Push-Location</a>       pushd   Push a location to the stack.
+     <a href="https://ss64.com/ps/set-location.html">Set-Location</a>  cd/chdir/sl  Set the current working location.
+<a id="m"></a>M
+  <a href="https://ss64.com/ps/send-mailmessage.html">Send-MailMessage</a>            Send an email message.
+       <a href="https://ss64.com/ps/measure-object.html">Measure-Object</a>         Measure the properties of an object.
+   <a href="https://ss64.com/ps/add-member.html">Add-Member</a>                 Add a member to an instance of a PowerShell object.
+   <a href="https://ss64.com/ps/get-member.html">Get-Member</a>            gm   Enumerate the properties of an object.
+       <a href="https://ss64.com/ps/messagebox.html">MessageBox</a>             Display a message box to the user
+   Find-Module                Find modules from an online gallery.
+    <a href="https://ss64.com/ps/get-module.html">Get-Module</a>          gmo   Get the modules imported to the session.
+ <a href="https://ss64.com/ps/import-module.html">Import-Module</a>         ipmo   Add a module to the session.
+ <a href="https://ss64.com/ps/install-module.html">Install-Module</a>               Download and install modules from an online repository.
+    <a href="https://ss64.com/ps/new-module.html">New-Module</a>          nmo   Create a new dynamic module (only in memory).
+ <a href="https://ss64.com/ps/remove-module.html">Remove-Module</a>          rmo   Remove a module from the current session.
+ Save-Module                  Save a module locally without installing it.
+ Get-InstalledModule          Get installed modules on a computer.
+ Uninstall-Module             Uninstall a module.
+ <a href="https://ss64.com/ps/update-module.html">Update-Module</a>                Download/install a new module version.
+ <a href="https://ss64.com/ps/export-modulemember.html">Export-ModuleMember</a>          Export specific module members.
+   <a href="https://ss64.com/ps/move-item.html">Move-Item</a>      mv/move/mi  Move an item from one location to another.
+    <a href="https://ss64.com/ps/set-mppreference.html">Set-MpPreference</a>          Configure preferences for Windows Defender.
+<a id="n"></a>N
+   <a href="https://ss64.com/ps/get-netadapter.html">Get-NetAdapter</a>             Get the basic network adapter properties.
+   Set-NetAdapter             Set the basic network adapter properties.
+  Disable-NetAdapterBinding   Disable a binding to a network adapter.
+    Get-NetAdapterVmq         Get the VMQ properties of a network adapter.
+    Set-NetAdapterVmq         Set the VMQ properties of a network adapter.
+   <a href="https://ss64.com/ps/test-netconnection.html">Test-NetConnection</a>         Display diagnostic information for a connection.
+    Get-NetConnectionProfile  Get a connection profile.
+    Set-NetConnectionProfile  Set a connection profile.
+    Set-NetFirewallProfile    Configure per-profile settings of Windows Firewall.
+ Enable-NetFirewallRule       Enable a previously disabled firewall rule.
+    Set-NetFirewallRule       Modify existing firewall rules.
+    Get-NetFirewallRule       Retrieve firewall rules from the target computer.
+    New-NetFirewallRule       Create a new firewall rule and add to a target computer.
+    <a href="https://ss64.com/ps/get-netipaddress.html">Get-NetIPAddress</a>          Get IP address configuration.
+    New-NetIPAddress          Create and configure an IP address.
+ Remove-NetIPAddress          Remove an IP address and its configuration.
+    Set-NetIPAddress          Modify the configuration of an IP address.
+    <a href="https://ss64.com/ps/get-netipconfiguration.html">Get-NetIPConfiguration</a>    Get IP network configuration.
+    Get-NetIPInterface        Get an IP interface.
+    Set-NetIPInterface        Modify an IP interface.
+    New-NetLbfoTeam           Create a new NIC team.
+    New-NetNat                Create a NAT object.
+    New-NetRoute              Create a route in the IP routing table.
+    <a href="https://ss64.com/ps/get-nettcpconnection.html">Get-NetTCPConnection</a>      Get TCP connections.
+    <a href="https://ss64.com/ps/set-nettcpsetting.html">Set-NetTCPSetting</a>         Modify a TCP setting.
+<a id="o"></a>O
+  <a href="https://ss64.com/ps/compare-object.html">Compare-Object</a> diff/compare Compare the properties of objects.
+    <a href="https://ss64.com/ps/group-object.html">Group-Object</a>       group  Group objects that contain the same value.
+  <a href="https://ss64.com/ps/measure-object.html">Measure-Object</a>              Measure the properties of an object.
+      <a href="https://ss64.com/ps/new-object.html">New-Object</a>              Create a new .Net object.
+   <a href="https://ss64.com/ps/select-object.html">Select-Object</a>      select  Select properties of objects.
+     <a href="https://ss64.com/ps/sort-object.html">Sort-Object</a>        sort  Sort objects by property value.
+   <a href="https://ss64.com/ps/where-object.html"> Where-Object</a>              Filter the objects passed along the command pipeline.
+   Add-OdbcDsn                Add an ODBC DSN.
+   <a href="https://ss64.com/ps/out-default.html">Out-Default</a>                Set the destination of default output.
+   <a href="https://ss64.com/ps/out-file.html">Out-File</a>                   Send output to a file.
+   <a href="https://ss64.com/ps/out-gridview.html">Out-GridView</a>         ogv   Send output to an interactive table.
+   <a href="https://ss64.com/ps/out-host.html">Out-Host</a>              oh   Send output to the host.
+   <a href="https://ss64.com/ps/out-null.html">Out-Null</a>                   Send output to null.
+   <a href="https://ss64.com/ps/out-printer.html">Out-Printer</a>           lp   Send the output to a printer.
+   <a href="https://ss64.com/ps/out-string.html">Out-String</a>                 Send objects to the host as strings.
+<a id="p"></a>P<a id="q"></a>
+       Get-Package            Return a list of all software packages installed using Package Management.
+      Find-Package            Find software packages in available package sources.
+   <a href="https://ss64.com/ps/install-package.html">Install-Package</a>            Install one or more software packages.
+ Uninstall-Package            Uninstall one or more software packages.
+   Install-PackageProvider    Install one or more Package Management package providers.
+           <a href="https://ss64.com/ps/syntax-args.html">Param</a>              Script Parameters.
+       Get-Partition          Return a list of partition objects.
+       New-Partition          Create a new partition on an existing Disk object.
+    Resize-Partition          Resize a partition and the underlying file system.
+       Set-Partition          Set attributes of a partition: active, read-only, offline.
+   <a href="https://ss64.com/ps/convert-path.html">Convert-Path</a>        cvpa   Convert a ps path to a provider path.
+      <a href="https://ss64.com/ps/join-path.html">Join-Path</a>               Combine a path and one or more child-paths.
+   <a href="https://ss64.com/ps/resolve-path.html">Resolve-Path</a>        rvpa   Resolves the wildcards in a path.
+     <a href="https://ss64.com/ps/split-path.html">Split-Path</a>               Return part of a path.
+      <a href="https://ss64.com/ps/test-path.html">Test-Path</a>               Return true if the path exists, otherwise return false.
+           <a href="https://ss64.com/ps/pause.html">Pause</a>              Pause and display the message "Press Enter to continue..."
+    Invoke-Pester             Invoke Pester to recursively run all tests.
+  Export-PfxCertificate       Export a certificate or a PFXData object to a PFX file.
+     <a href="https://ss64.com/ps/get-pfxcert.html">Get-PfxCertificate</a>       Get pfx certificate information.
+     Get-PhysicalDisk         Retrieve a list of Physical Disk objects.
+  Remove-PhysicalDisk         Remove a physical disk from a specified storage pool.
+     Set-PhysicalDisk         Set attributes on a specific physical disk.
+     Get-PnpDevice            Return information about PnP devices.
+     <a href="https://ss64.com/ps/pop-location.html">Pop-Location</a>      popd   Set the current working location from the stack.
+    <a href="https://ss64.com/ps/push-location.html">Push-Location</a>     pushd   Push a location to the stack.
+             <a href="https://ss64.com/ps/powershell.html">Powershell</a>       Launch a PowerShell session/run a script.
+     Add-Printer              Add a printer to the specified computer.
+     <a href="https://ss64.com/ps/get-printer.html">Get-Printer</a>              Retrieve a list of printers installed on a computer.
+  Remove-Printer              Remove a printer from the specified computer.
+     Set-Printer              Update the configuration of an existing printer.
+     Add-PrinterDriver        Install a printer driver on the computer.
+     Add-PrinterPort          Install a printer port on the computer.
+     <a href="https://ss64.com/ps/get-printjob.html">Get-PrintJob</a>             Retrieve a list of print jobs from the specified printer.
+         <a href="https://ss64.com/ps/syntax-function-input.html">Process</a>              Function PROCESS block.
+     <a href="https://ss64.com/ps/get-process.html">Get-Process</a>     ps/gps   Get a list of processes on a machine.
+   Debug-Process              Attach a debugger to a running process.
+   <a href="https://ss64.com/ps/start-process.html">Start-Process</a>  start/saps  Start one or more processes.
+    <a href="https://ss64.com/ps/stop-process.html">Stop-Process</a>   kill/spps  Stop a running process.
+    <a href="https://ss64.com/ps/wait-process.html">Wait-Process</a>              Wait for a process to stop.
+   <a href="https://ss64.com/ps/enable-psbreakpoint.html">Enable-PSBreakpoint</a>  ebp   Enable a breakpoint in the current console.
+  <a href="https://ss64.com/ps/disable-psbreakpoint.html">Disable-PSBreakpoint</a>  dbp   Disable a breakpoint in the current console.
+      <a href="https://ss64.com/ps/get-psbreakpoint.html">Get-PSBreakpoint</a>  gbp   Get the currently set breakpoints.
+      <a href="https://ss64.com/ps/set-psbreakpoint.html">Set-PSBreakpoint</a>  sbp   Set a breakpoint on a line, command, or variable.
+   <a href="https://ss64.com/ps/remove-psbreakpoint.html">Remove-PSBreakpoint</a>  rbp   Delete breakpoints from the current console.
+      <a href="https://ss64.com/ps/get-pscallstack.html">Get-PSCallStack</a>   gcs   Display the current call stack.
+      <a href="https://ss64.com/ps/get-psdrive.html">Get-PSDrive</a>       gdr   Get drive information (DriveInfo).
+      <a href="https://ss64.com/ps/new-psdrive.html">New-PSDrive</a>   mount/ndr Create a mapped network drive.
+   <a href="https://ss64.com/ps/remove-psdrive.html">Remove-PSDrive</a>       rdr   Remove a provider/drive from its location.
+      <a href="https://ss64.com/ps/get-psprovider.html">Get-PSProvider</a>          Get information for the specified provider.
+      <a href="https://ss64.com/ps/set-psdebug.html">Set-PSdebug</a>             Turn script debugging on or off.
+  <a href="https://ss64.com/ps/disable-psremoting.html">Disable-PSRemoting</a>          Disable remote session configuration on the local computer.
+   <a href="https://ss64.com/ps/enable-psremoting.html">Enable-PSRemoting</a>          Configure the computer to receive remote commands.
+      Get-PSRepository        Get PowerShell repositories.
+ Register-PSRepository        Register a PowerShell repository.
+      Set-PSRepository        Set values for a registered repository.
+  <a href="https://ss64.com/ps/connect-pssession.html">Connect-PSSession</a>  cnsn     Reconnect to a disconnected session.
+<a href="https://ss64.com/ps/disconnect-pssession.html">Disconnect-PSSession</a> dnsn     Disconnect from a session.
+    <a href="https://ss64.com/ps/enter-pssession.html">Enter-PSSession</a>  etsn     Start an interactive session with a remote computer.
+     <a href="https://ss64.com/ps/exit-pssession.html">Exit-PSSession</a>  exsn     End an interactive session with a remote computer.
+   <a href="https://ss64.com/ps/export-pssession.html">Export-PSSession</a>  epsn     Import commands and save them in a PowerShell module.
+      <a href="https://ss64.com/ps/get-pssession.html">Get-PSSession</a>   gsn     Get the PSSessions in the current session.
+   <a href="https://ss64.com/ps/import-pssession.html">Import-PSSession</a>  ipsn     Import commands from another session.
+      <a href="https://ss64.com/ps/new-pssession.html">New-PSSession</a>   nsn     Create a persistent connection to a local or remote computer.
+   <a href="https://ss64.com/ps/remove-pssession.html">Remove-PSSession</a>   rsn     Close PowerShell sessions.
+    <a href="https://ss64.com/ps/disable-pssessionconfiguration.html">Disable-PSSessionConfiguration</a>  Disable session configurations on the local computer.
+     <a href="https://ss64.com/ps/enable-pssessionconfiguration.html">Enable-PSSessionConfiguration</a>  Enable session configurations on the local computer.
+        <a href="https://ss64.com/ps/get-pssessionconfiguration.html">Get-PSSessionConfiguration</a>  Get the registered PS session configuration.
+   <a href="https://ss64.com/ps/register-pssessionconfiguration.html">Register-PSSessionConfiguration</a>  Create and register a new PS session configuration.
+        <a href="https://ss64.com/ps/set-pssessionconfiguration.html">Set-PSSessionConfiguration</a>  Change properties of a registered session configuration.
+ <a href="https://ss64.com/ps/unregister-pssessionconfiguration.html">Unregister-PSSessionConfiguration</a>  Delete registered PS session configuration.
+    New-PSSessionConfigurationFile  Create a file that defines a session configuration.
+        <a href="https://ss64.com/ps/new-pssessionoption.html">New-PSSessionOption</a>         Advanced options for a PSSession.
+   <a href="https://ss64.com/ps/add-pssnapin.html">Add-PsSnapIn</a>        asnp   Add snap-ins to the console.
+   <a href="https://ss64.com/ps/get-pssnapin.html">Get-PsSnapin</a>        gsnp   List PowerShell snap-ins on this computer.
+   <a href="https://ss64.com/ps/remove-pssnapin.html">Remove-PSSnapin</a>     rsnp   Remove PowerShell snap-ins from the console.
+<a id="r"></a>R
+   <a href="https://ss64.com/ps/get-random.html">Get-Random</a>                 Get a random number.
+   <a href="https://ss64.com/ps/read-host.html">Read-Host</a>                  Read a line of input from the host console.
+   Clear-RecycleBin           Clear the RecycleBin.
+   <a href="https://ss64.com/ps/remove-item.html">Remove-Item</a>  rm/del/erase/rd/ri/rmdir   Remove an item.
+   <a href="https://ss64.com/ps/rename-item.html">Rename-Item</a>      ren/rni   Change the name of an existing item.
+   <a href="https://ss64.com/ps/rename-itemproperty.html">Rename-ItemProperty</a>        Rename a property of an item.
+   <a href="https://ss64.com/ps/restart-computer.html">Restart-Computer</a>           Restart the operating system on a computer.
+   <a href="https://ss64.com/ps/return.html">Return</a>                     Exit the current scope, (function, script, or script block).
+   <a href="https://ss64.com/ps/call.html">Run/Call</a>             &amp;     Run a command (call operator).
+<a id="s"></a>S
+   <a href="https://ss64.com/ps/scheduler.html">Scheduler cmdlets</a>          Get/Set scheduled jobs.
+  Confirm-SecureBootUEFI      Confirm that Secure Boot is enabled on the local computer.
+   <a href="https://ss64.com/ps/select-object.html">Select-Object</a>     select   Select properties of objects.
+   <a href="https://ss64.com/ps/select-xml.html">Select-XML</a>                 Find text in an XML string or document.
+  New-SelfSignedCertificate   Create a new self-signed certificate for testing purposes.
+   <a href="https://ss64.com/ps/send-mailmessage.html">Send-MailMessage</a>           Send an email message.
+       <a href="https://ss64.com/ps/get-service.html">Get-Service</a>      gsv   Get a list of services.
+       <a href="https://ss64.com/ps/new-service.html">New-Service</a>            Create a new service.
+   <a href="https://ss64.com/ps/restart-service.html">Restart-Service</a>            Stop and then restart a service.
+    <a href="https://ss64.com/ps/resume-service.html">Resume-Service</a>            Resume a suspended service.
+       <a href="https://ss64.com/ps/set-service.html">Set-Service</a>            Change the start mode/properties of a service.
+     <a href="https://ss64.com/ps/start-service.html">Start-Service</a>     sasv   Start a stopped service.
+      <a href="https://ss64.com/ps/stop-service.html">Stop-Service</a>     spsv   Stop a running service.
+   <a href="https://ss64.com/ps/suspend-service.html">Suspend-Service</a>            Suspend a running service.
+   <a href="https://ss64.com/ps/sort-object.html">Sort-Object</a>         sort   Sort objects by property value.
+    <a href="https://ss64.com/ps/get-smbconnection.html">Get-SmbConnection</a>         Retrieve the connections established from the SMB client to the SMB servers.
+    Get-SmbOpenFile           Information about files that are open on behalf of SMB server clients.
+    <a href="https://ss64.com/ps/get-smbmapping.html">Get-SMBMapping</a>            Get an SMB mapping.
+    <a href="https://ss64.com/ps/new-smbmapping.html">New-SmbMapping</a>            Create an SMB mapping.
+ <a href="https://ss64.com/ps/remove-smbmapping.html">Remove-SmbMapping</a>            Remove an SMB mapping.
+    Get-SmbSession            Retrieve information about current SMB sessions.
+ Set-SmbClientConfiguration   Set the SMB client configuration.
+ Get-SmbServerConfiguration   Get the SMB Server configuration.
+ Set-SmbServerConfiguration   Set the SMB Server configuration.
+    <a href="https://ss64.com/ps/get-smbshare.html">Get-SmbShare</a>              Retrieve the SMB shares on the computer.
+    <a href="https://ss64.com/ps/set-smbshare.html">Set-SmbShare</a>              Modify the properties of an SMB share.
+    <a href="https://ss64.com/ps/new-smbshare.html">New-SmbShare</a>              Create an SMB share.
+ Remove-SmbShare              Remove an SMB share.
+    Get-SmbShareAccess        Retrieve the ACL of an SMB share.
+  Grant-SmbShareAccess        Add an allow ACE for a trustee to the security descriptor of the SMB share.
+   <a href="https://ss64.com/ps/set-strictmode.html">Set-StrictMode</a>             Enforce coding rules in expressions &amp; scripts.
+      <a href="https://ss64.com/ps/get-startapps.html">Get-StartApps</a>           Get the names and IDs of apps installed on the Start Menu.
+   Export-StartLayout         Export layout of the Start screen as an .xml file.
+   Import-StartLayout         Import the layout of the Start into a mounted Windows image.
+   <a href="https://ss64.com/ps/start-sleep.html">Start-Sleep</a>        sleep   Suspend shell, script, or runspace activity.
+   Get-StorageJob             Information about long-running Storage module jobs, such as a repair task.
+   New-StoragePool            Create a new storage pool using a group of physical disks.
+   <a href="https://ss64.com/ps/switch.html">Switch</a>                     Check multiple conditions.
+   <a href="https://ss64.com/ps/convertfrom-stringdata.html">ConvertFrom-StringData</a>     Convert a here-string into a hash table.
+   <a href="https://ss64.com/ps/select-string.html">Select-String</a>              Search through strings or files for patterns.
+<a id="t"></a>T
+   <a href="https://ss64.com/ps/tee-object.html">Tee-Object</a>           tee   Send input objects to two places.
+   <a href="https://ss64.com/ps/new-timespan.html">New-Timespan</a>               Create a timespan object.
+   <a href="https://ss64.com/ps/get-timezone.html">Get-TimeZone</a>         gtz   Get the current time zone or a list of available time zones.
+   <a href="https://ss64.com/ps/set-timezone.html">Set-TimeZone</a>         stz   Set the system time zone to a specified time zone.
+   Get-TlsCipherSuite         Get the list of cipher suites for TLS for a computer.
+   Get-Tpm                    Trusted Platform Module (TPM)
+   <a href="https://ss64.com/ps/trace-command.html">Trace-Command</a>              Trace an expression or command.
+   <a href="https://ss64.com/ps/get-tracesource.html">Get-Tracesource</a>            Get components that are instrumented for tracing.
+   <a href="https://ss64.com/ps/set-tracesource.html">Set-Tracesource</a>            Trace a PowerShell component.
+     <a href="https://ss64.com/ps/start-transaction.html">Start-Transaction</a>        Start a new transaction.
+  <a href="https://ss64.com/ps/complete-transaction.html">Complete-Transaction</a>        Commit the transaction.
+       <a href="https://ss64.com/ps/get-transaction.html">Get-Transaction</a>        Get information about the active transaction.
+       <a href="https://ss64.com/ps/use-transaction.html">Use-Transaction</a>        Add a command or expression to the transaction.
+      <a href="https://ss64.com/ps/undo-transaction.html">Undo-Transaction</a>        Roll back a transaction.
+   <a href="https://ss64.com/ps/start-transcript.html">Start-Transcript</a>           Start a transcript of a command shell session.
+    <a href="https://ss64.com/ps/stop-transcript.html">Stop-Transcript</a>           Stop the transcription process.
+         <a href="https://ss64.com/ps/trap.html">Trap</a>                 Handle a terminating error.
+         <a href="https://ss64.com/ps/try.html">Try ... Catch</a>        Handle a terminating error within a scriptblock.
+     <a href="https://ss64.com/ps/add-type.html">Add-Type</a>                 Add a .NET Framework type to a PowerShell session.
+   <a href="https://ss64.com/ps/update-typedata.html">Update-TypeData</a>            Update extended type configuration.
+<a id="u"></a>U
+   <a href="https://ss64.com/ps/get-uiculture.html">Get-Uiculture</a>              Get the ui culture information.
+       <a href="https://ss64.com/ps/unblock-file.html">Unblock-File</a>           Unblock files downloaded from the Internet.
+   <a href="https://ss64.com/ps/get-unique.html">Get-Unique</a>            gu   Get the unique items in a collection.
+    <a href="https://ss64.com/ps/update-formatdata.html">Update-Formatdata</a>         Update and append format data files.
+    <a href="https://ss64.com/ps/update-help.html">Update-Help</a>               Download and install help files.
+    <a href="https://ss64.com/ps/update-typedata.html">Update-Typedata</a>           Update the current extended type configuration.
+<a id="v"></a>V
+   <a href="https://ss64.com/ps/clear-variable.html">Clear-Variable</a>       clv   Remove the value from a variable.
+     <a href="https://ss64.com/ps/get-variable.html">Get-Variable</a>        gv   Get a PowerShell variable.
+     <a href="https://ss64.com/ps/new-variable.html">New-Variable</a>        nv   Create a new variable.
+  <a href="https://ss64.com/ps/remove-variable.html">Remove-Variable</a>        rv   Remove a variable and its value.
+     <a href="https://ss64.com/ps/set-variable.html">Set-Variable</a>    set/sv   Set a variable and a value.
+     Get-VirtualDisk          Return a list of VirtualDisks across storage pools/providers.
+     New-VirtualDisk          Create a new virtual disk in the specified storage pool.
+      Get-Volume              Get the specified Volume object, or all Volume objects.
+   Format-Volume              Format one or more volumes.
+      New-Volume              Create a volume with the specified file system.
+ Optimize-Volume              Optimize a volume.
+   Repair-Volume              Perform repairs on a volume.
+      Add-VpnConnection       Add a VPN connection to the Connection Manager phone book.
+      Get-VpnConnection       Retrieve the specified VPN connection profile information.
+      Set-VpnConnection       Change the config. of a VPN connection profile.
+      Add-VpnConnectionRoute  Add a route to a VPN connection.
+<a id="w"></a>W<a id="x"></a><a id="y"></a>
+<a href="https://ss64.com/ps/checkpoint-webapplicationmonitoring.html">Checkpoint-WebApplicationMonitoring</a> Create a checkpoint for an IIS web app.
+ <a href="https://ss64.com/ps/get-webapplicationmonitoringstatus.html">Get-WebApplicationMonitoringStatus</a> Get the monitoring status of web apps.
+ <a href="https://ss64.com/ps/new-webserviceproxy.html">New-WebServiceProxy</a>          Create a Web service proxy object.
+<a href="https://ss64.com/ps/invoke-webrequest.html">Invoke-WebRequest</a>             Get content from a web page.
+   <a href="https://ss64.com/ps/where-object.html">Where-Object</a>      where/?  Filter input from the pipeline.
+   <a href="https://ss64.com/ps/where-method.html">Where</a> method               Filter objects from a collection.
+   <a href="https://ss64.com/ps/while.html">While</a>                      Loop while a condition is True.
+     <a href="https://ss64.com/ps/add-windowscapability.html">Add-WindowsCapability</a>    Install a Windows capability package on the specified OS image.
+     <a href="https://ss64.com/ps/get-windowscapability.html">Get-WindowsCapability</a>    Get capabilities for an image or a running OS.
+  <a href="https://ss64.com/ps/remove-windowscapability.html">Remove-WindowsCapability</a>    Uninstall a Windows capability package from an image.
+  Export-WindowsDriver
+     <a href="https://ss64.com/ps/add-windowsfeature.html">Add-WindowsFeature</a>       Install roles, role services, and features. (Server 2008 R2).
+      <a href="https://ss64.com/ps/get-windowsfeature.html">Get-WindowsFeature</a>      Retrieve roles, role services, and features.
+ <a href="https://ss64.com/ps/install-windowsfeature.html">Install-WindowsFeature</a>       Install roles, role services, or features (Server 2012 R2).
+<a href="https://ss64.com/ps/uninstall-windowsfeature.html">Uninstall-WindowsFeature</a>      Uninstall/remove roles, role services, and features (2012 R2)
+   Mount-WindowsImage         Mount a Windows image (WIM or VHD file) to a directory on the local computer.
+  Repair-WindowsImage         Repair a Windows image in a WIM or VHD file.
+<a href="https://ss64.com/ps/disable-windowsoptionalfeature.html">Disable-WindowsOptionalFeature</a> Disable a feature in a Windows image.
+<a href="https://ss64.com/ps/enable-windowsoptionalfeature.html">Enable-WindowsOptionalFeature</a> Enable a feature in a Windows image.
+   <a href="https://ss64.com/ps/get-windowsoptionalfeature.html">Get-WindowsOptionalFeature</a> Get information about optional features in a Windows image.
+   <a href="https://ss64.com/ps/add-windowspackage.html">Add-WindowsPackage</a>         Add a single .cab or .msu file to a Windows image.
+   <a href="https://ss64.com/ps/get-windowspackage.html">Get-WindowsPackage</a>         Get information about packages in a Windows image.
+<a href="https://ss64.com/ps/remove-windowspackage.html">Remove-WindowsPackage</a>         Remove a package from a Windows image.
+   Get-WindowsUpdateLog       Merge Windows Update .etl files into a single log file.
+   Set-WinSystemLocale        Set the system locale for the current computer.
+   Set-WinUserLanguageList    Set the language list/properties for the current user.
+   <a href="https://ss64.com/ps/write-debug.html">Write-Debug</a>                Write a debug message to the console (5).
+   <a href="https://ss64.com/ps/write-error.html">Write-Error</a>                Write an object to the error pipeline (2).
+   <a href="https://ss64.com/ps/write-host.html">Write-Host</a>                 Display text on screen.
+   <a href="https://ss64.com/ps/write-information.html">Write-Information</a>          Write to the information data stream (6).
+   <a href="https://ss64.com/ps/write-output.html">Write-Output</a>   write/echo  Write an object to the pipeline (1).
+   <a href="https://ss64.com/ps/write-progress.html">Write-Progress</a>             Display a progress bar.
+   <a href="https://ss64.com/ps/write-verbose.html">Write-Verbose</a>              Write a string to the host's verbose display (4).
+   <a href="https://ss64.com/ps/write-warning.html">Write-Warning</a>              Write a warning string (3) in <span class="reverse">reverse video</span> to the display.
+    <a href="https://ss64.com/ps/set-wmiinstance.html">Set-WmiInstance</a>           Create or update an instance of an existing WMI class.
+ <a href="https://ss64.com/ps/invoke-wmimethod.html">Invoke-WmiMethod</a>      iwmi   Call WMI methods.
+    <a href="https://ss64.com/ps/get-wmiobject.html">Get-WmiObject</a>      gwmi   Get WMI class information.
+ <a href="https://ss64.com/ps/remove-wmiobject.html">Remove-WmiObject</a>      rwmi   Delete an instance of a WMI class.
+    <a href="https://ss64.com/ps/connect-wsman.html">Connect-WSMan</a>             Connect to the WinRM service on a remote computer.
+ <a href="https://ss64.com/ps/disconnect-wsman.html">Disconnect-WSMan</a>             Disconnect from the WinRM service on a remote computer.
+       <a href="https://ss64.com/ps/test-wsman.html">Test-WSMan</a>             Test if a computer is setup to receive remote commands.
+  <a href="https://ss64.com/ps/invoke-wsmanaction.html">Invoke-WSManAction</a>          Invoke an action on a specified object.
+ <a href="https://ss64.com/ps/disable-wsmancredssp.html">Disable-WSManCredSSP</a>         Disable Credential Security Service Provider (SSP) authentication.
+  <a href="https://ss64.com/ps/enable-wsmancredssp.html">Enable-WSManCredSSP</a>         Enable Credential SSP authentication.
+     <a href="https://ss64.com/ps/get-wsmancredssp.html">Get-WSManCredSSP</a>         Get the Credential SSP configuration.
+   <a href="https://ss64.com/ps/new-wsmaninstance.html">New-WSManInstance</a>          Create a new instance of a management resource.
+   <a href="https://ss64.com/ps/get-wsmaninstance.html">Get-WSManInstance</a>          Display management information (XML or value).
+   <a href="https://ss64.com/ps/set-wsmaninstance.html">Set-WSManInstance</a>          Modify the management information related to a resource.
+<a href="https://ss64.com/ps/remove-wsmaninstance.html">Remove-WSManInstance</a>          Delete a management resource instance.
+   <a href="https://ss64.com/ps/set-wsmanquickconfig.html">Set-WSManQuickConfig</a>       Configure the local computer for remote management.
+   <a href="https://ss64.com/ps/new-wsmansessionoption.html">New-WSManSessionOption</a>     Options for WSMan commands.
+<a id="z"></a>Z
+   <a href="https://ss64.com/ps/zip.html">Zipfile</a>                    Compress or Extract zip files.
+     <a href="https://ss64.com/ps/syntax-comments.html">  #  </a>                    Comment / Remark.
+       <a href="https://ss64.com/ps/source.html">. (source)</a>             Run a command script in the current shell.
+       <a href="https://ss64.com/ps/call.html">&amp; (call)</a>               Run a command, script or function.
+     <a href="https://ss64.com/ps/foreach-object.html">  %  </a>                    Alias for <a href="https://ss64.com/ps/foreach-object.html">ForEach-Object</a>.
+     <a href="https://ss64.com/ps/stop-parsing.html">  --%  </a>                  Stop parsing input.
+     <a href="https://ss64.com/ps/where-object.html">  ?  </a>                    Alias for <a href="https://ss64.com/ps/where-object.html">Where-Object</a>.
+       $variable = "<i>value</i>"    Define a variable  also: ${n!a#me} = "value".
+      <a href="https://ss64.com/ps/syntax-pipeline.html"> $_ </a>                    The current <a href="https://ss64.com/ps/syntax-pipeline.html">pipeline</a> object.
+       <a href="https://ss64.com/ps/syntax-operators.html">@(...)</a>                 Force an expression to be evaluated as an array.
+      <a href="https://ss64.com/ps/syntax-esc.html"> ` </a>                     Escape or Continue on the next line.</pre>
+<p>The cmdlets above are listed in A-Z order, matching  the <i>Verb-</i> and/or <i>-Noun</i> and/or <i>Alias </i> of the cmdlet (so some duplicates).<br>
+To scroll this page, press  [ a – z ] on the keyboard,  also on the detail pages [s] = syntax  [e] = examples, [\] = Search.</p>
+<p>PowerShell can also run  all the standard <a href="https://ss64.com/nt/">CMD commands</a>  (external commands), <span class="code">.cmd</span> batch files will run within a CMD.exe shell (so can include <em>internal</em> CMD commands), plus all Resource Kit utilities. <a href="https://ss64.com/vb/">VBScripts</a> can be run via <span class="code">cscript</span>. [ <a href="https://ss64.com/ps/syntax-run.html">Examples</a> ]</p>
+<p class="space"><a href="https://ss64.com/ps/ad.html">Active Directory</a>  cmdlets.<br>
+<a href="https://ss64.com/links/pslinks.html">Websites, additional Cmdlets, Utilities and Books</a> for PowerShell. <br>
+<a href="https://ss64.org/viewforum.php?f=6">SS64 PowerShell forum</a>.</p><!-- #BeginLibraryItem "/Library/foot_menu.lbi" --><hr>
+<div id="bl">&nbsp;</div>
+<div id="br">Copyright © 1999-2024 <a href="https://ss64.com/">SS64.com</a><br>
+Some rights reserved</div><!-- #EndLibraryItem -->
+<iframe name="__tcfapiLocator" style="display: none;" src="./PowerShell commands - PowerShell - SS64.com_files/saved_resource.html"></iframe></body></html>
